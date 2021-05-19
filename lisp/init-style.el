@@ -1,0 +1,25 @@
+;;  Coding Style
+(load "cc-mode" t t) 
+(defvar data-domain-style-alist 
+  '("data-domain" 
+    (indent-tabs-mode . nil)
+    (c-basic-offset . 4) 
+    (c-comment-only-line-offset . (0 . 0)) 
+    (c-hanging-comment-ender-p . nil) 
+    (c-offsets-alist . ((statement-block-intro . +) 
+            (knr-argdecl-intro . 4) 
+            (substatement-open . +) 
+            (label . 0) 
+            (statement-case-open . +) 
+            (statement-cont . 4) 
+            (arglist-intro . c-lineup-arglist-intro-after-paren) 
+            (arglist-close . c-lineup-arglist) 
+            )) 
+    ) 
+  "A c-style-alist member for 4-character indented Data-Domain-style C code") 
+(setq c-style-variables-are-local-p t) 
+(setq c-style-alist (cons data-domain-style-alist c-style-alist)) 
+(setq c-default-style "data-domain") 
+(setq require-final-newline t)
+
+(provide 'init-style)
