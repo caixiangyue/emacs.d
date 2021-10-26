@@ -7,5 +7,6 @@
 (require 'init-rainbow)
 (require 'init-linum)
 (require 'init-fiplr)
+(require 'init-counsel-etags)
 
 (provide 'init-config)
