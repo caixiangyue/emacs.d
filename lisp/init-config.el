@@ -1,4 +1,3 @@
-
 (require 'init-ui)
 (require 'init-encode)
 (require 'init-style)
@@ -8,5 +7,7 @@
 (require 'init-linum)
 (require 'init-fiplr)
 (require 'init-lsp-mode)
+
+(setq make-backup-files nil)
 
 (provide 'init-config)
