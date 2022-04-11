@@ -7,6 +7,7 @@
 (require 'init-linum)
 (require 'init-fiplr)
 (require 'init-lsp-mode)
+(require 'init-rg)
 
 (setq make-backup-files nil)
 
